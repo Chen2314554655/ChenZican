@@ -115,7 +115,7 @@ Token Token_stream::get(){
     			s += ch;
     			while (cin.get(ch) && (isalpha(ch) || isdigit(ch))) s+=ch;
     			cin.putback(ch);
-    			if (s == declkey) return Token{*};            //dirll7 .10
+    			if (s == declkey) return Token{let};            
     			else if (is_declared(s))
     				return Token(number, get_value(s));
     			return Token{name,s};
