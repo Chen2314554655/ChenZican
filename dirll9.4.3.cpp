@@ -17,12 +17,6 @@ Date::Date(int yy, int mm, int dd)
      cout << "Error, invalid month." << endl;
  else if (d < 1 || d > 31)
      cout << "Error, invalid day." << endl;
- else
- {
-     Date::y = y;
-     Date::m = m;
-     Date::d = d;
- }
  return;
 }
 
