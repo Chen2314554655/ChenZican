@@ -47,6 +47,8 @@ Date(int yy, Month mm, int dd): y(yy), m(mm), d(dd)
      cout << "Error, invalid month." << endl;
  else if (d < 1 || d > 31)
      cout << "Error, invalid day." << endl;
+ else if (y < 0)
+     cout << "Error, invalid year." << endl;      
 
  return;
 }
