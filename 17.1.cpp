@@ -16,13 +16,11 @@ void print_array(ostream& os, int* a, int n)
 }
 
 
-
-ostream& print_vector(ostream& os, vector<int>& v)
+void print_vector(ostream& os, vector<int>& v)
 {
-    for (auto e : v)
-        os << e << " , ";
+    for (int i = 0; i < v.size(); i++)
+        os << v[i] << " , ";
     os << endl;
-    return os;
 }
 
 int main()
